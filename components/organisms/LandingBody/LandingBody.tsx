@@ -12,7 +12,7 @@ import React from "react";
 const LandingBody = () => {
   return (
     <Container>
-      <SimpleGrid columns={2} spacing={10} p="64px 24px">
+      <SimpleGrid columns={2} spacing={10} p="110px 24px">
         <Box>
           <Box
             background="gray.300"

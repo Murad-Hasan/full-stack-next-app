@@ -10,7 +10,7 @@ import React from "react";
 
 const LandingFooter = () => {
   return (
-    <Box as="footer" backgroundColor="blue.300" py="40px">
+    <Box as="footer" backgroundColor="blue.300" py="20px">
       <Container>
         <SimpleGrid columns={2} spacing={10} p="40px">
           <Box>SuperApp 2022</Box>
