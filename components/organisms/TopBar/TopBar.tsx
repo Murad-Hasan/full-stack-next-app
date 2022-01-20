@@ -4,25 +4,45 @@ import { MenuItem } from "../../molecules/MenuItems/MenuItem";
 const TopBar = () => {
   return (
     <>
-      <Flex w="100%" flexDirection="row" alignContent="center" p="8px 16px">
-        <Text
-          fontSize="36px"
-          fontWeight="bold"
-          lineHeight="42px"
-          color="#1F79BA"
-          flexGrow={1}
+      <Flex
+        w="100%"
+        flexDirection="row"
+        alignItems="center"
+        justifyContent="center"
+        p="8px 16px"
+      >
+        <Flex
+          w={["100%", "100%", "100%", "90ch"]}
+          flexDirection="row"
+          alignItems="center"
+          p="8px 16px"
         >
-          Super App
-        </Text>
-        <HStack spacing="20px" alignContent="center">
-          <MenuItem text="Blog" href="/blog" />
-          <MenuItem text="Product" href="/product" />
-          <MenuItem text="Pricing" href="/pricing" />
-        </HStack>
-        <Flex marginLeft="82px">
-          <Button variant="solid" colorScheme="blue">
-            Get Started
-          </Button>
+          <Text
+            fontSize={{ base: "20px", md: "30px", lg: "36px" }}
+            fontWeight="bold"
+            lineHeight="42px"
+            color="#1F79BA"
+            flexGrow={1}
+          >
+            Super App
+          </Text>
+          <HStack spacing="20px" alignContent="center">
+            <MenuItem text="Blog" href="/blog" />
+            <MenuItem text="Product" href="/product" />
+            <MenuItem text="Pricing" href="/pricing" />
+          </HStack>
+          <Flex
+            marginLeft={{
+              base: "8px",
+              md: "24px",
+              lg: "24px",
+              xl: "30px",
+            }}
+          >
+            <Button variant="solid" colorScheme="blue">
+              Get Started
+            </Button>
+          </Flex>
         </Flex>
       </Flex>
     </>
